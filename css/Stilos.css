@@ -1,0 +1,237 @@
+:root {
+ --primario: #003f5c;
+ --secundario: #ec9b3b;
+}
+
+.titulo span{
+    color:#f7be16;
+}
+.nav-link{
+    color: #272121;
+}
+
+.navbar{
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.imagen-ubicacion{
+    background-image: url(../img/teleferico-la-paz_principal.jpg);
+    height: 35rem;
+    
+}
+.imagen-bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagen-principal-inicio{
+    background-image: url(../img/teleferico-la-paz_principal.jpg);
+    height: 35rem;
+}
+.imagen-principal-inicio p{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%,-50%);
+}
+
+.imagen-principal{
+    background-image: url(../img/teleferico-la-paz_principal.jpg);
+    height: 20rem;
+}
+
+.imagen-principal p{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.categorias h2{
+    font-size: 2.5rem;
+    color: #f7be16;
+}
+.categorias a{
+    font-weight: 400;
+    color: #272121;
+    text-decoration: none;
+}
+
+.nosotros .img-nosotros{
+     min-height: 30rem ;
+}
+
+.img-nosotros{
+    background-image: url(../img/NOSOTROS.jpg);
+    
+}
+
+.btn-success{
+    background-color: #f7be16!important;
+}
+
+.img-productos{
+    width: 800px;
+    height: 210px;
+}
+
+.alinear{
+    text-align: center;
+}
+
+.img-detalles{
+    background-image: url(../img/NOSOTROS.jpg);
+}
+
+/*PIE DE PAGINA*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+
+/*login*/
+
+.fondo{
+    background-color: white;
+}
+
+.login-container{
+  height: 100vh;
+  width: 100%;
+}
+.login-form{
+  margin: auto;
+  width: 370px;
+  padding: 15px;
+  max-width: 100%;
+}
+.login-form .form-control{
+  font-size: 15px;
+  min-height: 48px;
+  font-weight: 500;
+}
+.login-form a{
+  text-decoration: none;
+  color:#666;
+}
+.login-form a:hover{
+  color:white;
+}
+.forgot-link{
+  font-size: 13px;
+}
+
+.form-control:focus{
+  border-color:#723dbe;
+  box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
+}
+.btn-custom{
+  background: #723dbe;
+  border-color:#723dbe;
+  color:#fff;
+  font-size: 15px;
+  font-weight: 600;
+  min-height: 48px;
+}
+.btn-custom:focus,
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:active:focus{
+  background: #54229d;
+  border-color: #54229d;
+  color:#fff;
+}
+.btn-custom:focus{
+  box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
+}
+
+/*BOTON CARRITO*/
+.btn-flotante {
+    font-size: 16px; /* Cambiar el tamaño de la tipografia */
+    font-weight: bold; /* Fuente en negrita o bold */
+    color: #ffffff; /* Color del texto */
+    border-radius: 5px; /* Borde del boton */
+    letter-spacing: 2px; /* Espacio entre letras */
+    background-color: rgb(11, 11, 163); /* Color de fondo */
+    padding: 18px 30px; /* Relleno del boton */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    text-decoration: none;
+}
+.btn-flotante:hover {
+    background-color: #f70743;
+    transform: translateY(-7px);
+}
